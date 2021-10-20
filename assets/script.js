@@ -64,3 +64,23 @@ document.getElementById('minus-cc').addEventListener('click', function () {
   totalQty.innerText = total();
 });
 
+
+// Event listener for Sugar Sprinkle cookies
+
+// Add Quantity
+document.getElementById('add-sugar').addEventListener('click', function () {
+  sugarQty.innerText = ++sugar;
+  totalQty.innerText = total();
+});
+
+// Minus Quantity
+document.getElementById('minus-sugar').addEventListener('click', function () {
+  // Check if quantity is equal to zero
+  if (parseInt(sugarQty.innerText) === 0) {
+    sugarQty.innerText = 0;
+  } else {
+    sugarQty.innerText = --sugar;
+  }
+  totalQty.innerText = total();
+});
+
