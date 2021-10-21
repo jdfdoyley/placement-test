@@ -51,7 +51,6 @@ document.getElementById('minus-cc').addEventListener('click', () => {
   totalQty.textContent = `${total()}`;
 });
 
-
 // Add Quantity for Sugar Sprinkle cookies
 document.getElementById('add-sugar').addEventListener('click', () => {
   sugarQty.textContent = `${++sugar}`;
@@ -66,7 +65,7 @@ document.getElementById('minus-sugar').addEventListener('click', () => {
   } else {
     sugarQty.textContent = `${--sugar}`;
   }
-
+  
   totalQty.textContent = `${total()}`;
 });
 
